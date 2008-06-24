@@ -1,0 +1,14 @@
+= Layout
+
+`dvorak' is the old XFree86 layout where national variants were still
+part of the main dvorak layout.
+
+`is' is the new Xorg layout where dvorak is a variant of the national
+layout.
+
+= Installation
+    
+    $ locate symbols/is
+    /usr/share/X11/xkb/symbols/is
+    cp dvorak-is/is /usr/share/X11/xkb/symbols/is
+    setxkbmap -layout is -variant dvorak -option ctrl:swapcaps
