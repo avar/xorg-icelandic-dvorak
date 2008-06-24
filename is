@@ -173,11 +173,11 @@ xkb_symbols "dvorak" {
 
     include "us(dvorak)"
 
-    key <AD11> { [      slash,    question,    U201e,  U201c  ] };
-    key <AC06> { [       d,  D,      eth,            ETH      ] };
-    key <AC10> { [       s,  S,      ae,             AE       ] };
-    key <AC11> { [   minus,  underscore, endash,     emdash   ] };
-    key <AB10> { [       z,  Z,      thorn,          Thorn    ] };
+    key <AD11> { [      slash,  question,    U201e,   U201c   ] };
+    key <AC06> { [       d,     D,           eth,     ETH     ] };
+    key <AC10> { [       s,     S,           ae,      AE      ] };
+    key <AC11> { [   minus,     underscore,  endash,  emdash  ] };
+    key <AB10> { [       z,     Z,           thorn,   Thorn   ] };
 
     include "level3(ralt_switch)"
 };
