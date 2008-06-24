@@ -1,0 +1,20 @@
+--- dvorak.orig	2006-07-17 02:30:29.000000000 +0000
++++ dvorak	2006-07-17 03:33:53.000000000 +0000
+@@ -112,6 +112,17 @@
+ 
+ };
+ 
++// Icelandic Dvorak
++partial alphanumeric_keys 
++xkb_symbols "is" {
++    include "pc/dvorak(basic)"
++
++      key <AC06> { [	    d,	D,      eth,		ETH	 ] };
++      key <AC10> { [	    s,	S,      ae,		AE	 ] };
++      key <AC11> { [	minus,	underscore, endash,	emdash   ] };
++      key <AB10> { [	    z,	Z,      thorn,          Thorn    ] };
++};
++
+ // Swedish Dvorak
+ partial alphanumeric_keys 
+ xkb_symbols "se" {
