@@ -1,4 +1,32 @@
-= Layout
+= About
+
+This is a modified version of the English Dvorak layout that allows
+you to type all Icelandic letters under X. It's not a full attempt at
+nationalizing the layout as e.g. the Norwegian, Swedish and French
+layouts which modify the primary keys of the basic Dvorak layout
+extensively.
+
+Rather it's a simple modification of 5 keys of the US Dvorak layout,
+it adds Germanic/Icelandic style quotation marks („“), eth (ðÐ), ae
+(æÆ), endash and emdash (–—) and thorn (þÞ). These keys aren't used in
+the US version making this IS version a superset of it.
+
+Maybe someone else will make a "full" attempt at an Icelandic layout
+but I was mostly interested in continuing to type English comfortably
+as a primary function while being able to type the full Icelandic
+alphabet as a secondary function.
+
+= Inclusion in Xorg
+
+I already have a `mac' variant I wrote included in Xorg, but I've been
+hesitant to submit a patch for the Dvorak layout for the
+aforementioned reasons of it not being a full attempt like the rest of
+the layouts currently included are.
+
+But maybe inclusion would be more useful than not, maybe under a
+different namespace than is/dvorak.
+
+= Directory layout
 
 `dvorak' is the old XFree86 layout where national variants were still
 part of the main dvorak layout.
@@ -7,8 +35,10 @@ part of the main dvorak layout.
 layout.
 
 = Installation
+
+on Xorg:
     
     $ locate symbols/is
     /usr/share/X11/xkb/symbols/is
     cp dvorak-is/is /usr/share/X11/xkb/symbols/is
-    setxkbmap -layout is -variant dvorak -option ctrl:swapcaps
+    setxkbmap -layout is -variant dvorak
