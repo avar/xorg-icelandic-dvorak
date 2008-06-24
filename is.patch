@@ -1,0 +1,23 @@
+--- is.orig	2008-06-24 16:23:51.000000000 +0000
++++ is	2008-06-24 15:57:57.000000000 +0000
+@@ -164,3 +164,20 @@
+ 
+     include "level3(ralt_switch)"
+ };
++
++
++// Icelandic Dvorak
++partial alphanumeric_keys 
++xkb_symbols "dvorak" {
++    name[Group1]= "Iceland - dvorak";
++
++    include "us(dvorak)"
++
++    key <AD11> { [      slash,  question,    U201e,   U201c   ] };
++    key <AC06> { [       d,     D,           eth,     ETH     ] };
++    key <AC10> { [       s,     S,           ae,      AE      ] };
++    key <AC11> { [   minus,     underscore,  endash,  emdash  ] };
++    key <AB10> { [       z,     Z,           thorn,   Thorn   ] };
++
++    include "level3(ralt_switch)"
++};

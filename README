@@ -29,10 +29,12 @@ different namespace than is/dvorak.
 = Directory layout
 
 `dvorak' is the old XFree86 layout where national variants were still
-part of the main dvorak layout.
+part of the main dvorak layout, `dvorak.patch' is a patch to the last
+XFree86 version of the official `dvorak' I used.
 
 `is' is the new Xorg layout where dvorak is a variant of the national
-layout.
+layout, `is.patch' is a patch to the last Xorg version of the official
+`is' I used.
 
 = Installation
 
