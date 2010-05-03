@@ -42,5 +42,5 @@ on Xorg:
     
     $ locate symbols/is
     /usr/share/X11/xkb/symbols/is
-    cp dvorak-is/is /usr/share/X11/xkb/symbols/is
+    sudo cp xorg-icelandic-dvorak/is /usr/share/X11/xkb/symbols/is
     setxkbmap -layout is -variant dvorak
